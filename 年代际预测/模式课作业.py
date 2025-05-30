@@ -1,3 +1,4 @@
+import xesmf as xe
 import numpy as np
 import pandas as pd
 import xarray as xr
@@ -17,7 +18,7 @@ import cartopy
 data=np.loadtxt("C:/Users/Zhao Qun/Desktop/SURF_CLI_CHN_MUL_DAY-TEM-12001-200809.TXT")
 xday=data[::30,:]       #选取9月1日所有站点数据
 temp=xday[:,7]/10   #温度
-
+    
 #print(temp)
 #demlores=xr.open_dataset("C:/Users/Zhao Qun/Desktop/DemLoRes.nc")
 #demhires=xr.open_dataset("C:/Users/Zhao Qun/Desktop/DemHiRes.nc")
